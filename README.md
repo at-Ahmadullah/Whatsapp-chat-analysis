@@ -3,18 +3,18 @@
 The WhatsApp Chat Analyzer is a tool that allows users to analyze their WhatsApp chat data. With this app, you can upload a WhatsApp chat export and gain insights into various statistics, including message frequency, most active participants, word clouds, and other detailed analysis. This project helps you visualize and understand your WhatsApp conversations better.
 
 ## Features
-**Chat Analysis:** Analyze message frequencies, daily activity, and the number of messages sent by each participant.
-**Visualizations:** View message trends over time, top users, and word clouds.
-**File Upload:** Easily upload your WhatsApp chat export file.
-**Real-Time Insights:** Get real-time insights and graphs based on your WhatsApp chat data.
+**Chat Analysis:** Analyze message frequencies, daily activity, and the number of messages sent by each participant.  
+**Visualizations:** View message trends over time, top users, and word clouds.  
+**File Upload:** Easily upload your WhatsApp chat export file.  
+**Real-Time Insights:** Get real-time insights and graphs based on your WhatsApp chat data.  
 
 ## Technologies Used
-**Streamlit:** For building the interactive web interface.
-**Pandas:** For data manipulation and analysis.
-**Matplotlib & Seaborn:** For creating visualizations.
-**Wordcloud:** To generate word clouds from chat data.
-**Urlextract:** To extract URLs from the chat text.
-**Emoji:** For processing and visualizing emoji usage in chats.
+**Streamlit:** For building the interactive web interface.  
+**Pandas:** For data manipulation and analysis.  
+**Matplotlib & Seaborn:** For creating visualizations.  
+**Wordcloud:** To generate word clouds from chat data.  
+**Urlextract:** To extract URLs from the chat text.  
+**Emoji:** For processing and visualizing emoji usage in chats.  
 
 ## Installation Instructions
 **- Clone the repository:**
