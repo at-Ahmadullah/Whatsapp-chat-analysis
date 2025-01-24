@@ -8,7 +8,8 @@ st.sidebar.title("Whatsapp Chat Analysis")
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 
 if not uploaded_file:
-    st.title("Analyse your chats here...")
+    st.title("SOCIALYTICS")
+    st.markdown("<h3 style='font-size: 25px;color: grey;'>Analyse your whatsapp chats here...</h3>", unsafe_allow_html=True)
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
