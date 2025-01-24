@@ -1,5 +1,5 @@
 import streamlit as st
-import preprocessor, helper
+import preprocessor as preprocessor, helper as helper
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -10,7 +10,6 @@ if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
     df = preprocessor.preprocess(data)
-    st.dataframe(df)
 
     user_list = df['user'].unique().tolist()
     user_list.remove('group_notification')
@@ -132,14 +131,16 @@ if uploaded_file is not None:
 
     #Emoji Analysis
     emoji_df = helper.most_common_emoji(selected_user, df)
-    st.title('Emoji Analysis')
 
-    col1,col2 = st.columns(2)
+    if len(emoji_df) != 0:
+        st.title('Emoji Analysis')
 
-    with col1:
-        st.dataframe(emoji_df)
+        col1,col2 = st.columns(2)
 
-    with col2:
-        fig, ax = plt.subplots()
-        ax.pie(emoji_df[1], labels = emoji_df[0], autopct = "%0.2f")
-        st.pyplot(fig)
+        with col1:
+            st.dataframe(emoji_df)
+
+        with col2:
+            fig, ax = plt.subplots()
+            ax.pie(emoji_df[1], labels = emoji_df[0], autopct = "%0.2f")
+            st.pyplot(fig)
